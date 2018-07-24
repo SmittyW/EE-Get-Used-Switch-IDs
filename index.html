@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>EE Switch List</title>
+</head>
+<body>
+	<style type="text/css">
+	body
+	{
+		font-family: "Roboto Mono", monospace;
+        font-size:12px;
+	}
+
+	font
+	{
+		font-size: 16px;
+        font-weight: bold;
+	}
+
+    div *
+    {
+        display: block;
+    }
+	</style>
+
+	<form id="login" class="border-window" autocomplete="off">
+		<input type="text" placeholder="RoomID" class="text" id="roomID"/>
+		<input type="submit" id="login-btn" class="button start primary" value="Fetch"/>
+	</form>
+    <p>*Save level to get latest results</p>
+
+    <div>
+    	<font color="purple">Purple Switches</font>
+    	<textarea id="purpleText" style="margin: 0px; height: 290px; width: 493px;"></textarea>
+
+    	<font color="orange">Orange Switches</font>
+    	<textarea id="orangeText" style="margin: 0px; height: 290px; width: 493px;"></textarea>
+    </div>
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/PlayerIOClient.development.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
